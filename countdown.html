@@ -30,9 +30,24 @@ var x = setInterval(function() {
     } else {
         second = " seconds "
     }
+    if(days == 1) {
+        day = " day "
+    } else {
+        day = " days "
+    }
+    if(hours == 1) {
+        hour = " hour "
+    } else{
+        hour = " hours "
+    }
+    if(minutes == 1) {
+        minute = " minute "
+    } else {
+        minute = " minutes "
+    }
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + second;
+  document.getElementById("demo").innerHTML = days + day + hours + hour
+  + minutes + minute + seconds + second;
 
   // If the count down is finished, write some text
   if (distance < 0) {
